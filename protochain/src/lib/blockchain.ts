@@ -1,5 +1,9 @@
 import Block from "./block";
 
-const block1 = new Block(2, "teste");
+export default class Blockchain {
+    blocks: Block[];
 
-console.log(block1)
+    constructor(){
+        this.blocks = [new Block(0, "", "Genesis block")];
+    }
+}
